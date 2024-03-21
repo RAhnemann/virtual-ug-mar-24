@@ -50,8 +50,7 @@
    - Execute `npm i`
    - Execute `npm run build`
 10. Rebuild the index data: `dotnet sitecore index rebuild`
-11. Open https://www.xmcloud.localhost for the rendering host
-12. Open https://xmcloudcm.localhost/sitecore for CM
+11. Open https://xmcloudcm.localhost/sitecore for CM
 
 ## Performing Project Updates
 
@@ -63,25 +62,3 @@ If you made updates to any of the Dockerfiles or to the .env_source file that wi
 4. Purge your .\docker\deploy\website folder
 5. Delete your .env file (If you made changes to it, ensure they are part of the .\docker\.env file)
 6. Start at Step 1 above
-
-## Important Links
-
-- Local GraphQL Playground: https://cm.virtualug.localhost/sitecore/api/graph/edge/ui
-
-  Sample Query:
-
-  `query{
-   layout(site: "VirtualUG", routePath: "/", language: "en") {
-      item {
-         rendered
-      }
-   }
-}`
-
-  HTTP Headers:
-
-  `{
-   "sc_apikey":"1FC41CC1-F52E-4ABB-AF63-A9E8CA295F46"
-}`
-
-- Local Layout Service (for the Home item): https://cm.virtualug.localhost/sitecore/api/layout/render/jss?item=/&sc_apikey=1FC41CC1-F52E-4ABB-AF63-A9E8CA295F46&sc_mode=normal&sc_site=VirtualUG
