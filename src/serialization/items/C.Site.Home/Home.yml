@@ -1,0 +1,46 @@
+﻿---
+ID: "34dd35e9-f698-467d-92c6-d91327a75ee3"
+Parent: "e26871db-9aa5-4153-8a4c-7a6ae63f3f8d"
+Template: "f6b74fc0-ccf4-4224-b727-8e87c573c4f9"
+Path: /sitecore/content/VirtualUG/VirtualUG/Home
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{51C7C04F-F51D-4BC2-A0B3-E77D377F2649}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240308T050719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: VirtualUG
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "5633eba5-542f-42fd-8467-6e78bc0c293f"
+      Hint: Title
+      Value: VirtualUG
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4ce5c2e9-0bd6-4158-8821-5a91b027c787"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240308T050737Z

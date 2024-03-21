@@ -1,0 +1,56 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "VirtualUG.Sitecore.Items.Master",
+  "items": {
+    "includes": [
+      {
+        "name": "C.System.Settings.Services.RenderingHosts",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "C.System.Settings.Services.APIKey",
+        "path": "/sitecore/system/Settings/Services/API Keys",
+        "scope": "descendantsOnly",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "M.Feature.Templates",
+        "path": "/sitecore/templates/Feature/VirtualUG",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      },
+      {
+        "name": "M.Project.Templates",
+        "path": "/sitecore/templates/Project/VirtualUG",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      },
+      {
+        "name": "M.Project.PlaceholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Project/VirtualUG",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      },
+      {
+        "name": "M.Project.MediaLibrary",
+        "path": "/sitecore/media library/Project/VirtualUG",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "M.Project.Renderings",
+        "path": "/sitecore/layout/Renderings/Project/VirtualUG",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      },
+      {
+        "name": "M.System.Modules.Powershell.Scripts",
+        "path": "/sitecore/system/Modules/PowerShell/Script Library/VirtualUG",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

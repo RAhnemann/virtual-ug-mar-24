@@ -1,0 +1,17 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "VirtualUG.Sitecore.Items.Local",
+  "references": [
+    "VirtualUG.Sitecore.Items.Structure"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "C.Site.Settings.SiteGroupings.Local",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Settings/Site Grouping/VirtualUG",
+        "scope": "singleItem",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}

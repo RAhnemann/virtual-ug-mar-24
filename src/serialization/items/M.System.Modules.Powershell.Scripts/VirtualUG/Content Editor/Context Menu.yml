@@ -1,0 +1,46 @@
+﻿---
+ID: "f85aa8c8-3f18-49e3-bde8-44cf91f6045b"
+Parent: "10be34bd-57c4-408e-9ea2-71b89c098650"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/VirtualUG/Content Editor/Context Menu
+SharedFields:
+- ID: "613d128b-7bf2-40f4-84cb-6717408f9806"
+  Hint: ShowRule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{FD1929F4-CEF9-45D5-A83C-A272C08DCB34}">
+        <conditions>
+          <condition
+            id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+            uid="82DDD11BC8924F21A9BE51F0064995A7"
+            templateid="{F6B74FC0-CCF4-4224-B727-8E87C573C4F9}" />
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240311T234944Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3599666-77a1-4590-85c4-5be6af073bd2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240311T235842Z

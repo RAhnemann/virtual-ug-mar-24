@@ -1,0 +1,18 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "VirtualUG.Sitecore.Items.Content",
+  "references": [
+    "VirtualUG.Sitecore.Items.Master",
+    "VirtualUG.Sitecore.Items.Structure"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "C.Site.Home",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Home",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}

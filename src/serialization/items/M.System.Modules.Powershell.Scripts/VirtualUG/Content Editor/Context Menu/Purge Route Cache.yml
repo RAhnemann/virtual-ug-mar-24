@@ -1,0 +1,81 @@
+﻿---
+ID: "625d2196-4e9a-40ed-844b-2c9997235a49"
+Parent: "f85aa8c8-3f18-49e3-bde8-44cf91f6045b"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/VirtualUG/Content Editor/Context Menu/Purge Route Cache
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/refresh.png
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $apiKey = [Sitecore.Configuration.Settings]::GetSetting("ISR.APIKey")
+    $hostname = [Sitecore.Configuration.Settings]::GetSetting("ISR.Hostname") #If you're in a multi-head, this needs to be more dynamic
+        
+    $currItem = Get-Item .
+    
+    $apiUrl =  $hostname+"/api/routepurge"
+    
+    [System.Uri]$uri = [Sitecore.Links.LinkManager]::GetItemUrl($currItem);
+    
+    $path = $uri.LocalPath
+    
+    $userName = (Get-User -Current).Name
+    
+    if($path -eq "")
+    {
+        $path = "/"
+    }
+    
+    try
+    {
+        $res = Invoke-WebRequest $apiUrl -Headers @{"apikey"=$apiKey; "path"=$path; "userName"=$userName} -UseBasicParsing
+        
+        if($res.StatusCode -eq 202)
+        {
+            Show-Alert -Title "Successfully Purged Route for $path" 
+        }
+        else
+        {
+            Write-Host "API: $apiUrl"
+            Write-Host "Path: $path"
+            Show-Alert -Title "FAILED to Purge Route for $path ($($res.StatusCode))"
+        }
+    }
+    catch {
+        Write-Host "API: $apiUrl"
+        Write-Host "Path: $path"
+    
+     if($res)
+    {
+    Write-Host $res.StatusCode
+    }
+        Show-Alert -Title "FAILED to Purge Route for $path (0)"
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240311T235015Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "99f2b5c4-a493-42e3-a9dd-ae18e6abc151"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T165529Z

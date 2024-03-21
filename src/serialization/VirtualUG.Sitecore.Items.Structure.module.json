@@ -1,0 +1,59 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "VirtualUG.Sitecore.Items.Structure",
+  "references": [
+    "VirtualUG.Sitecore.Items.Master"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "S.Tenant",
+        "path": "/sitecore/content/VirtualUG",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "S.Site",
+        "path": "/sitecore/content/VirtualUG/VirtualUG",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "S.Site.Dictionary",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Dictionary",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "S.Site.Data",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Data",
+        "scope": "ItemAndChildren",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "S.Site.Media",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Media",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "S.Site.Presentation",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Presentation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "S.Site.Settings",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Settings",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "S.Site.Settings.SiteGrouping",
+        "path": "/sitecore/content/VirtualUG/VirtualUG/Settings/Site Grouping",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      }
+    ]
+  }
+}

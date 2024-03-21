@@ -1,0 +1,37 @@
+﻿---
+ID: "e2a4b048-e4f4-4794-a6e6-251c6dd32e57"
+Parent: "34dd35e9-f698-467d-92c6-d91327a75ee3"
+Template: "f6b74fc0-ccf4-4224-b727-8e87c573c4f9"
+Path: /sitecore/content/VirtualUG/VirtualUG/Home/No SSG
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{023F0E39-5488-4023-A372-7F234E1A9459}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240312T170351Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: No SSG
+    - ID: "5633eba5-542f-42fd-8467-6e78bc0c293f"
+      Hint: Title
+      Value: No SSG
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9ee30fef-2598-424b-87e0-9b107fc6ecbb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rahnemann@rightpoint.com
+    - ID: "bd41ac34-9726-4ed9-bf5f-73d5fd3195be"
+      Hint: IncludeInStaticGeneration
+      Value: 1
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T214857Z

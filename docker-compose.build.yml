@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  cm:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cm:${VERSION:-latest}
+    build:
+      context: ./docker/build/cm
+      args:
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xmcloud-cm:${SITECORE_VERSION}
+        TOOLS_IMAGE: ${TOOLS_IMAGE}
+  rendering:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}
+    build:
+      context: ./docker/build/rendering
+      target: ${BUILD_CONFIGURATION}
+      args:
+        PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
+  nodejs:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
+    build:
+      context: ./docker/build/nodejs
+      args:
+        PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
+        NODEJS_VERSION: ${NODEJS_VERSION}
